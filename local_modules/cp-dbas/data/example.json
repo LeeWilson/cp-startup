@@ -1,0 +1,7 @@
+{
+  "Example" : [
+    {"ExampleId":1,"Name": "test" },
+    {"ExampleId":2,"Name": "test" }
+  ]
+}
+

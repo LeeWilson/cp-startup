@@ -1,0 +1,16 @@
+{
+  "name": "cp-dbas",
+  "version": "1.0.1",
+  "description": "Database as a service.",
+  "main": "index.js",
+  "author": {
+    "name": "contact partners",
+    "email": "support@contactpartners.com"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=0.10.27"
+  },
+  "dependencies": {
+  }
+}
