@@ -1,0 +1,63 @@
+{
+  "apps": [
+    {
+      "key": "customer",
+      "route": "prospectorcustomer",
+      "path": "/prospectorcustomer",
+      "position": 0
+    },
+    {
+      "key": "home",
+      "route": "home",
+      "path": "/home",
+      "position": -1
+    },
+    {
+      "key": "reports",
+      "route": "reports",
+      "path": "/reports",
+      "position": 0
+    },
+    {
+      "key": "users",
+      "route": "users",
+      "path": "/users",
+      "position": 0
+    },
+    {
+      "key": "customers",
+      "route": "customers",
+      "path": "/customers",
+      "position": 0
+    },
+    {
+      "key": "callrecording",
+      "route": "callrecording",
+      "path": "/callrecording",
+      "position": 0
+    },
+    {
+      "key": "dashboard",
+      "route": "dashboard",
+      "path": "/dashboard",
+      "position": 0
+    },
+    {
+      "key": "search",
+      "route": "search",
+      "path": "/search",
+      "position": 99
+    }
+  ],
+  "tools": [
+    "Help",
+    "LocaleSwitch",
+    "ThemeSwitch",
+    "Notification",
+    "Me"
+  ],
+  "shell": {
+    "timeout": 1800000,
+    "warnBefore": 120000
+  }
+}
