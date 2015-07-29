@@ -4,25 +4,20 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var env        = argv.env || 'development';
-var onlineData = argv.onlinedata || false;
-var debugMode  = argv.debugMode || true;
-
+var env        = argv.env || 'demo';
 var plugins = [
     new webpack.ProvidePlugin({
       $: 'jquery', jQuery: 'jquery', 'windows.jQuery': 'jquery'
     }),
     new webpack.DefinePlugin({
       ENV: JSON.stringify(env),
-      NODE_ENV: JSON.stringify(env),
-      ONLINEDATA: onlineData,
-			DEBUGMODE: debugMode
+      NODE_ENV: JSON.stringify(env)
     }),
     new webpack.DefinePlugin({
       "process.env": {NODE_ENV: JSON.stringify(env), ONLINEDATA : onlineData }
     }),
     new HtmlWebpackPlugin({
-      template: './app/html/index.html'
+      template: './node_modules/cp-framework/demoApp/html/index.html'
     }),
     new ExtractTextPlugin('framework.css', {
       allChunks: true
@@ -49,7 +44,7 @@ var desktop = {
   name: 'desktop',
 
   entry: {
-    app: [path.join(__dirname, 'app', 'startup.js')]
+    app: [path.join(__dirname, 'node_modules/cp-framework/demoApp', 'startup.js')]
   },
 
   output: {
@@ -60,10 +55,7 @@ var desktop = {
   devtool: 'inline-source-map',  // or 'source-map',
 
   resolve: {
-    extensions: ['', '.json', '.js', '.jsx'],
-    alias:{
-      "cp-dbas" :path.join(__dirname, "node_modules/cp-empty")
-    }
+    extensions: ['', '.json', '.js', '.jsx']
   },
 
   module: {

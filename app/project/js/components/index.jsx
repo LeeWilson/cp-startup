@@ -2,8 +2,7 @@
 var React = require('react');
 var Framework = require('cp-framework');
 //var Events = require('../constants/constants').EventTypes;
-
-//var Async = Framework.Mixin.Async;
+var Async = require('../mixin/async');
 //var ConsoleLog = require('../mixin/consoleLogMixin');
 
 var {
@@ -39,7 +38,7 @@ var Index = React.createClass({
           ]
       };
 
-     // Async.callAsync(asyncData, this.success);
+      Async.runAsync(asyncData, this.success);
 
     },
 
@@ -56,7 +55,7 @@ var Index = React.createClass({
 
       return (
         <AppCanvas predefinedLayout={0}>
-         My Index
+         Hello world!
         </AppCanvas>
       );
     }

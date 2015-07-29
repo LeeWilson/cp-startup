@@ -1,6 +1,6 @@
 {
   "name": "cp-startup",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "CP Startup for React Framework",
   "main": "index.js",
   "author": {
@@ -15,15 +15,18 @@
   "scripts": {
     "start": "webpack-dev-server --devtool eval --progress --colors --onlinedata false --hot --host 0.0.0.0 --debugMode true",
     "release": "webpack --progress --colors --config webpack.release.config.js --env production",
+    "demo": "webpack-dev-server --devtool eval --progress --colors  --config webpack.demo.config.js --onlinedata false --hot --host 0.0.0.0 --debugMode true",
     "lint": "eslint --ext .jsx --ext .js app",
     "lintlib": "eslint  --ext .jsx --ext .js lib"
   },
   "dependencies": {
+
   },
   "devDependencies": {
-    "cp-framework": "*",
+    "cp-async": "^1.0.0",
     "cp-dbas": "./local_modules/cp-dbas",
-     "classnames": "^1.2.2",
+    "cp-framework": "*",
+    "classnames": "^1.2.2",
     "es6-promise": "^2.1.1",
     "flux": "^2.0.3",
     "jquery": "1.11.2",
