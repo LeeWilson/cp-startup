@@ -1,6 +1,6 @@
 {
   "name": "cp-startup",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CP Startup for React Framework",
   "main": "index.js",
   "author": {
@@ -20,11 +20,10 @@
     "lintlib": "eslint  --ext .jsx --ext .js lib"
   },
   "dependencies": {
-    "cp-async": "^1.0.2",
     "material-design-icon": "^0.3.0"
   },
   "devDependencies": {
-    "cp-async": "*",
+    "cp-async": "^1.0.2",
     "cp-dbas": "./local_modules/cp-dbas",
     "cp-framework": "*",
     "classnames": "^1.2.2",
