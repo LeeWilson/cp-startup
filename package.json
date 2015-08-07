@@ -1,6 +1,6 @@
 {
   "name": "cp-startup",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CP Startup for React Framework",
   "main": "index.js",
   "author": {
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "material-design-icon": "^0.3.0",
-    "cp-async": "^1.0.3",
+    "cp-async": ">=1.0.4",
     "cp-dbas": "./local_modules/cp-dbas",
     "cp-framework": "^1.0.23",
     "classnames": "^1.2.2",
