@@ -5,13 +5,18 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var env        = argv.env || 'demo';
+var onlineData = argv.onlinedata || false;
+var debugMode  = argv.debugMode || true;
+
 var plugins = [
     new webpack.ProvidePlugin({
       $: 'jquery', jQuery: 'jquery', 'windows.jQuery': 'jquery'
     }),
     new webpack.DefinePlugin({
       ENV: JSON.stringify(env),
-      NODE_ENV: JSON.stringify(env)
+      NODE_ENV: JSON.stringify(env),
+      ONLINEDATA: onlineData,
+			DEBUGMODE: debugMode
     }),
     new webpack.DefinePlugin({
       "process.env": {NODE_ENV: JSON.stringify(env), ONLINEDATA : onlineData }

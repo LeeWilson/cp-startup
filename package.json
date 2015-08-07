@@ -20,10 +20,10 @@
     "lintlib": "eslint  --ext .jsx --ext .js lib"
   },
   "dependencies": {
-
+    "material-design-icon": "^0.3.0"
   },
   "devDependencies": {
-    "cp-async": "^1.0.0",
+    "cp-async": "*",
     "cp-dbas": "./local_modules/cp-dbas",
     "cp-framework": "*",
     "classnames": "^1.2.2",

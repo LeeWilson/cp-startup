@@ -2,7 +2,7 @@
 var React = require('react');
 var Framework = require('cp-framework');
 //var Events = require('../constants/constants').EventTypes;
-var Async = require('../mixin/async');
+
 //var ConsoleLog = require('../mixin/consoleLogMixin');
 
 var {
@@ -25,21 +25,6 @@ var Index = React.createClass({
     },
 
     componentDidMount: function () {
-
-      var asyncData = {
-          scriptName: 'Audit.CustomerHit',
-          args: [
-            { 'browser'   : 'data.browser' },  	// NvarChar(255) : is required
-            { 'version'   : 'data.version' }, 	// NvarChar(50)  : is required
-            { 'url'       :  'data.url' }, 		  // NvarChar(450) : is required
-            { 'ipAddress' :  'data.url' }, 		  // NvarChar(20)  : is required
-            { 'isMobile'  :  'data.isMobile' }, // bit           : is required
-            { 'brand'     :  'data.brand' } 	  // NvarChar(20)  : is required
-          ]
-      };
-
-      Async.runAsync(asyncData, this.success);
-
     },
 
     componentWillUnmount: function () {
@@ -59,10 +44,6 @@ var Index = React.createClass({
         </AppCanvas>
       );
     }
-,
-success: function (data){
-  console.log(data);
-}
   })
   ;
 

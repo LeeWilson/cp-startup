@@ -17,7 +17,6 @@ module.exports = {
          args: [argument]
        }
      */
-    console.log(dbas);
     if (dbas) {
       debugger;
       Async.AsyncFunctions.runAsync(thatAsyncData,successFunction,errorFunction);
