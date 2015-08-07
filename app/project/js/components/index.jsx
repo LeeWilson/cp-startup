@@ -2,7 +2,7 @@
 var React = require('react');
 var Framework = require('cp-framework');
 //var Events = require('../constants/constants').EventTypes;
-
+var async = require('cp-async');
 //var ConsoleLog = require('../mixin/consoleLogMixin');
 
 var {
